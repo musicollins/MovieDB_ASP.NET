@@ -2,3 +2,16 @@
 @model MovieDB.UI.Pages.MovieModel
 @{
 }
+
+
+
+
+<div class="card" style="width: auto;">
+    <img class="card-img-top" src="@Model.Movie.ImgUrl" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Movie.Title</h5>
+        <h6 class="card-title">@Model.Movie.Genre</h6>
+        <p class="card-text">@Model.Movie.Synopsis <span>...</span></p>
+        <a asp-page="/Movie" class="btn btn-primary">Back To Index</a>
+    </div>
+</div>
