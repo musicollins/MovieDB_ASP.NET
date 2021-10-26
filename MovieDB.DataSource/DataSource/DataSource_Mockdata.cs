@@ -49,5 +49,19 @@ namespace MovieDB.UI.DataSource
             return Movies;
         }
 
+        public Movie GetById(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveById(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
