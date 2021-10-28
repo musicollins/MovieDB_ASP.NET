@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
 
 namespace MovieDB.UI.Model
 {
     public class Movie
     {
 
-        public Guid MovieId { get; set; }
+        [JsonProperty("movie_id")]
+        public int MovieId { get; set; }
         public string Title { get; set; }
         public string ImgUrl { get; set; }
         public string Synopsis { get; set; }

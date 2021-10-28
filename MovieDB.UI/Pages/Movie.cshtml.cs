@@ -15,7 +15,7 @@ namespace MovieDB.UI.Pages
         {
             this.dataSource = dataSource;
         }
-        public void OnGet(Guid MovieId)
+        public void OnGet(int MovieId)
         {
             Movie = dataSource.GetById(MovieId);
         }

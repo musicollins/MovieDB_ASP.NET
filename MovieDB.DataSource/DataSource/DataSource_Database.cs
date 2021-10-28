@@ -11,17 +11,17 @@ namespace MovieDB.UI.DataSource
             return new List<Movie>();
         }
 
-        public Movie GetById(Guid id)
+        public Movie GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void RemoveById(Guid id)
+        public void RemoveById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Guid id)
+        public void Update(int id)
         {
             throw new NotImplementedException();
         }

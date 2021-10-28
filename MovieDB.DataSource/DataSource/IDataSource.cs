@@ -7,8 +7,8 @@ namespace MovieDB.UI.DataSource
     public interface IDataSource
     {   
         List<Movie> GetAll();
-        Movie GetById(Guid id);
-        void RemoveById(Guid id);
-        void Update(Guid id);
+        Movie GetById(int id);
+        void RemoveById(int id);
+        void Update(int id);
     }
 }
