@@ -51,7 +51,7 @@ namespace MovieDB.UI.DataSource
 
         public Movie GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return Movies.Find(m => m.MovieId == id);
         }
 
         public void RemoveById(Guid id)
