@@ -6,10 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MovieDB.DataSource\MovieDB.DataSource.csproj" />
     <ProjectReference Include="..\MovieDB.Model\MovieDB.Model.csproj" />
   </ItemGroup>
 

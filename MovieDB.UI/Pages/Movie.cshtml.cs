@@ -1,23 +1,22 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MovieDB.UI.DataAccess;
 using MovieDB.UI.DataSource;
 using MovieDB.UI.Model;
-using System;
-using System.Linq;
 
 namespace MovieDB.UI.Pages
 {
     public class MovieModel : PageModel
     {
-        private readonly IDataSource dataSource;
+        private readonly IDataAccess _dataAccess;
 
         public Movie Movie{ get; set; }
-        public MovieModel(IDataSource dataSource)
+        public MovieModel(IDataAccess dataAccess)
         {
-            this.dataSource = dataSource;
+            _dataAccess = dataAccess;
         }
         public void OnGet(int MovieId)
         {
-            Movie = dataSource.GetById(MovieId);
+            Movie = _dataAccess.GetById(MovieId);
         }
     }
 }

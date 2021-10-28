@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace MovieDB.UI.DataSource
 {
-    public class DataSource_Mockdata :IDataSource
+    public class DataSource_Mockdata
     {
         public List<Movie> Movies { get; set; }
         public DataSource_Mockdata()
@@ -44,25 +44,12 @@ namespace MovieDB.UI.DataSource
             };
         }
 
-        public List<Movie> GetAll()
+        public List<Movie> DataProvider()
         {
             return Movies;
             
         }
 
-        public Movie GetById(int id)
-        {
-            return Movies.Find(m => m.MovieId == id);
-        }
 
-        public void RemoveById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
