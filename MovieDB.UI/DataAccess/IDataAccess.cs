@@ -1,11 +1,12 @@
 ﻿using MovieDB.UI.Model;
+using System;
 using System.Collections.Generic;
 
 namespace MovieDB.UI.DataAccess
 {
-    public interface IDataAccess
+    public interface IDataAccess<T> 
     {
-        List<Movie> GetAllMovies();
-        Movie GetById(int id);
+        List<T> GetAll();
+        T GetById(int id);
     }
 }

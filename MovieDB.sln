@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieDB.DataSource", "Movie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieDB.Model", "MovieDB.Model\MovieDB.Model.csproj", "{A3B0A84F-8155-4189-B2E7-1BF692512BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieDB.ConApp", "MovieDB.ConApp\MovieDB.ConApp.csproj", "{A38D5B9B-FD01-4D8B-9531-E8E7D2CD62C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieDB.ConApp", "MovieDB.ConApp\MovieDB.ConApp.csproj", "{A38D5B9B-FD01-4D8B-9531-E8E7D2CD62C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

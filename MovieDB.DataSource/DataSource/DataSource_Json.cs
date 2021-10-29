@@ -4,9 +4,15 @@ namespace MovieDB.UI.DataSource
 {
     public class DataSource_Json
     {
-        public string DataProvider()
+        public string DataProviderMovie()
         {
             var json = File.ReadAllText(@"C:\Users\Demiurgos\source\repos\MovieDB\MovieDB.DataSource\movies.json");
+            return json;
+        }
+
+        public string DataProviderKeys()
+        {
+            var json = File.ReadAllText(@"C:\Users\Demiurgos\source\repos\MovieDB\MovieDB.DataSource\keys.json");
             return json;
         }
 

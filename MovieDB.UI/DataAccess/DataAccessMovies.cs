@@ -1,34 +1,34 @@
 ﻿using MovieDB.UI.DataSource;
 using MovieDB.UI.Model;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MovieDB.UI.DataAccess
 {
-    public class DataAccessAPI : IDataAccess
+    public class DataAccessMovies : DataAccessRepo<Movie>
     {
-        private readonly DataSource_Json _dataSource;
-        public List<Movie> Movies { get; set; }
-        public DataAccessAPI(DataSource_Json dataSource)
+        public DataAccessMovies(DataSource_Json dataSource) : base(dataSource)
         {
-            _dataSource = dataSource;
         }
+        public List<Movie> Movies { get; set; }
 
-        public List<Movie> GetAllMovies()
+        public override List<Movie> GetAll()
         {
-            var jsonResponse = _dataSource.DataProvider();
+            var jsonResponse = _dataSource.DataProviderMovie();
             Movies = JsonConvert.DeserializeObject<List<Movie>>(jsonResponse);
             return Movies;
         }
 
-        public Movie GetById(int id)
+        
+
+        public override Movie GetById(int id)
         {
-            var jsonResponse = _dataSource.DataProvider();
+            var jsonResponse = _dataSource.DataProviderMovie();
             Movies = JsonConvert.DeserializeObject<List<Movie>>(jsonResponse);
             return Movies.SingleOrDefault(m => m.MovieId == id);
         }
+
+
     }
 }

@@ -7,10 +7,10 @@ namespace MovieDB.UI.Pages
 {
     public class MovieModel : PageModel
     {
-        private readonly IDataAccess _dataAccess;
+        private readonly DataAccessRepo<Movie> _dataAccess;
 
         public Movie Movie{ get; set; }
-        public MovieModel(IDataAccess dataAccess)
+        public MovieModel(DataAccessRepo<Movie> dataAccess)
         {
             _dataAccess = dataAccess;
         }
