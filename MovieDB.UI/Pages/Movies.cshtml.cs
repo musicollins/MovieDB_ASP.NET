@@ -7,15 +7,15 @@ namespace MovieDB.UI.Pages
 {
     public class MoviesModel : PageModel
     {
-        private readonly IDataAccess<Movie> _dataSource;
+        private readonly IDataAccess<Movie> _dataAccess;
 
         public List<Movie> Movies { get; set; }
 
 
-        public MoviesModel(DataAccessRepo<Movie> dataSource)
+        public MoviesModel(IDataAccess<Movie> dataAccess)
         {
-            _dataSource = dataSource;
-            Movies = _dataSource.GetAll();
+            _dataAccess = dataAccess;
+            Movies = _dataAccess.GetAll();
         }
 
         public void OnGet()

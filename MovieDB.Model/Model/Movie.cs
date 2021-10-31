@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace MovieDB.UI.Model
 {
@@ -6,7 +7,7 @@ namespace MovieDB.UI.Model
     {
 
         [JsonProperty("movie_id")]
-        public int MovieId { get; set; }
+        public Guid MovieId { get; set; }
         public string Title { get; set; }
         public string ImgUrl { get; set; }
         public string Synopsis { get; set; }

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "4dcd3272-4737-42ac-9f97-5ac61ca8de25",
+    "Name": "iPhone 5",
+    "Price": 399,
+    "ProductType": 0,
+    "description": "bla bla bla",
+    "ImgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/IPhone_5.png/800px-IPhone_5.png"
+  },
+  {
+    "Id": "64f29ed3-517c-4190-b0f9-21413f57c30c",
+    "Name": "iPhone X",
+    "Price": 999,
+    "ProductType": 0,
+    "description": "bla bla bla",
+    "ImgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/800px-IPhone_X_vector.svg.png"
+  },
+  {
+    "Id": "25deb044-22b7-4ea6-9ac1-a77af6d8461c",
+    "Name": "iPhone 12 Pro",
+    "Price": 1299,
+    "ProductType": 0,
+    "description": "bla bla bla",
+    "ImgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/IPhone_12_Pro_Gold.svg/220px-IPhone_12_Pro_Gold.svg.png"
+  },
+  {
+    "Id": "80ed28bf-55bb-4fca-b4be-3ed143148f09",
+    "Name": "Mortal Kombat X",
+    "Price": 50,
+    "ProductType": 1,
+    "description": "bla bla bla",
+    "ImgUrl": "https://upload.wikimedia.org/wikipedia/en/d/d0/Mortal_Kombat_X_Cover_Art.png"
+  },
+  {
+    "Id": "d4a60857-22c4-40b4-8ad1-a99bb714e50d",
+    "Name": "Wacom X Pro",
+    "Price": 299,
+    "ProductType": 0,
+    "description": "bla bla bla",
+    "ImgUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Wacom_graphics_tablet_and_pen.png"
+  }
+]

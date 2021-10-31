@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - MovieDB.UI</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/cart.css" />
+    <link rel="stylesheet" href="~/css/products.css" />
 </head>
 <body>
     <header>
@@ -28,10 +30,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Movies">Movies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Keys">Keys</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Products/Products">Products</a>
                         </li>
                     </ul>
                 </div>
+                <a class="navbar-brand" asp-area="" asp-page="/ShopingCart/Cart">Cart</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </header>

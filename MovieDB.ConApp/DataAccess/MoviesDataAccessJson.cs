@@ -19,7 +19,7 @@ namespace MovieDB.ConApp.DataAccess
         }
         public List<Movie> GetAll()
         {
-            string jsonResponse = _dataSource.DataProvider();
+            string jsonResponse = _dataSource.DataProviderMovie();
             Movies = JsonConvert.DeserializeObject<List<Movie>>(jsonResponse);
             return Movies;
         }

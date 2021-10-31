@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MovieDB.Model.Model;
 using MovieDB.UI.DataAccess;
 using MovieDB.UI.DataSource;
+using MovieDB.UI.DTOs;
 using MovieDB.UI.Model;
 
 namespace MovieDB.UI
@@ -24,8 +24,8 @@ namespace MovieDB.UI
         {
             services.AddSingleton<DataSource_Json>();
             //services.AddSingleton(typeof(DataAccessRepo<object>), typeof(DataAccessAPI));
-            services.AddSingleton(typeof(DataAccessRepo<Movie>), typeof(DataAccessMovies));
-            services.AddSingleton(typeof(DataAccessRepo<Key>), typeof(DataAccessKey));
+            services.AddSingleton(typeof(IDataAccess<Movie>), typeof(MoviesDataAccess));
+            services.AddSingleton(typeof(IDataAccess<ProductDTO>), typeof(ProductsDataAccess));
             services.AddRazorPages();
         }
 

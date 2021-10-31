@@ -20,12 +20,17 @@ namespace MovieDB.ConApp
             //        new MoviesDataAccessJson(
             //            new DataSource_Json()));
 
-            var diContainer = new DiContainer();
-            var viewModel = diContainer.Container().Resolve<MoviesModel>();
+            //var diContainer = new DiContainer();
+            //var viewModel = diContainer.Container().Resolve<MoviesModel>();
 
-            foreach (var movie in viewModel.Movies)
+            //foreach (var movie in viewModel.Movies)
+            //{
+            //    Console.WriteLine(movie.Title);
+            //}
+
+            for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine(movie.Title);
+                Console.WriteLine(Guid.NewGuid());
             }
 
         }

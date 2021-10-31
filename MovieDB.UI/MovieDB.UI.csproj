@@ -8,4 +8,8 @@
     <ProjectReference Include="..\MovieDB.DataSource\MovieDB.DataSource.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataAccess\Mappers\" />
+  </ItemGroup>
+
 </Project>

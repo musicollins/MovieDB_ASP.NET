@@ -11,8 +11,7 @@ namespace MovieDB.ConApp.Views
         public MovieModel(IDataAccess dataAccess)
         {
             _dataAccess = dataAccess;
-            int id = 1;
-            Movie = _dataAccess.GetAll().Find(m => m.MovieId == id);
+            //Movie = _dataAccess.GetAll().Find(m => m.MovieId == id);
         }
 
 

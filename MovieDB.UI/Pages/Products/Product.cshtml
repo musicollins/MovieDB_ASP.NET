@@ -1,0 +1,13 @@
+﻿@page
+@model MovieDB.UI.Pages.Products.ProductModel
+@{
+}
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="@Model.Product.ImgUrl" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Product.Name</h5>
+        <h6 class="card-title">@Model.Product.ProductType</h6>
+        <a asp-page="/Product" asp-route-Id="@Model.Product.Id" class="btn btn-primary">More</a>
+    </div>
+</div>

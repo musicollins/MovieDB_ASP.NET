@@ -16,5 +16,11 @@ namespace MovieDB.UI.DataSource
             return json;
         }
 
+        public string DataProviderProducts()
+        {
+            var json = File.ReadAllText(@"C:\Users\Demiurgos\source\repos\MovieDB\MovieDB.DataSource\products.json");
+            return json;
+        }
+
     }
 }
